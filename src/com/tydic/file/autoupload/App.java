@@ -120,8 +120,11 @@ public class App {
 	
 	
 	public static void main(String[] args) throws IOException {
+		
 		//初始化--获取的args参数
 		init(args);
+		
+		CmdSingletonExec.execCmd(folder);//只允许执行一次
 		
 		//初始化线程池
 		pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * POOL_MULTI);
