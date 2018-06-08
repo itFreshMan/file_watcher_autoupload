@@ -21,7 +21,7 @@ public class ProcesSingtonle {
 	private static Log log = LogFactory.getLog(ProcesSingtonle.class);
 	private static final String PID_FILE_NAME = "pid";
 	public static void main(String[] args) throws InterruptedException, IOException {
-		System.out.println(System.getProperty("user.dir"));
+	
 		int processId = getProcessID();
 		Thread.sleep(1000);
 //		Runtime.getRuntime().exec("taskkill /F /PID "+processId);

@@ -44,7 +44,7 @@ public class App {
 	 */
 	private static void init(String[] args) throws MalformedURLException {
 		if (args == null || args.length != 6) {
-			log.error("启动参数无效,请输入启动参数：[protocol,url,port,folder,fileType]");
+			log.error("启动参数无效,请输入启动参数：[protocol,host,port,urlPath,folder,fileType]");
 			System.exit(1);
 		}
 		protocol = args[0];
