@@ -69,6 +69,7 @@ public class CmdSingletonExec {
 		}else{
 			log.warn("已有进程正在执行,关闭当前进程:" + PID);
 			Runtime.getRuntime().exec("taskkill /F /PID " + PID);
+			System.exit(1);
 			return;
 		}
 	}
